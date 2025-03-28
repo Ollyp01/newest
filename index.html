@@ -27,6 +27,72 @@
         nav a:hover {
             text-decoration: underline;
         }
+        nav {
+    background-color: darkcyan;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-form input {
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: darkcyan;
+}
+
+.nav-form button {
+    background-color: white;
+    color: darkcyan;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-form button:hover {
+    background-color: lightgray;
+}
+
+@media (max-width: 600px) {
+    .nav-form {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .nav-form input {
+        width: 100%;
+    }
+
+    .nav-form button {
+        width: 100%;
+    }
+}
+
         h1 {
             color: darkcyan;
             margin-top: 20px;
@@ -94,8 +160,6 @@
     </nav>
 
     <h1>Welcome to the UFC - Alex Periera Fan Page!</h1>
-
-    <p>!</p>
 
     <p>Welcome to the Alex Periera UFC Homepage. Above is a menu to give you access to any UFC information you need! The rest of this page will give plenty of information about Alex and his story!</p>
     <p> Alex Pereira, a Brazilian mixed martial artist, rose to prominence through his incredible knockout power and exceptional kickboxing skills. Known for his rivalry with Israel Adesanya, Pereira faced the middleweight champion multiple times, with their epic battles culminating in Pereira dethroning Adesanya at UFC 281. Beyond the cage, Pereira's story is deeply tied to his tribal roots. Coming from a proud indigenous background, he embraces his heritage and tribal bloodline, which has shaped his resilience and fighting spirit. His journey is not only a testament to his athletic prowess but also to his deep connection to his cultural identity.</p>
