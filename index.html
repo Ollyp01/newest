@@ -1,159 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex Pereira Fan Page</title>
-  <style>
-    body {
-      background-color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav {
-      background-color: darkcyan;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .nav-form {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .nav-form input, .nav-form button {
-      padding: 8px;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .nav-form input {
-      border: 1px solid white;
-      background-color: white;
-      color: darkcyan;
-    }
-
-    .nav-form button {
-      background-color: white;
-      color: darkcyan;
-      border: none;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .nav-form button:hover {
-      background-color: lightgray;
-    }
-
-    h1 {
-      color: darkcyan;
-      margin-top: 20px;
-      font-size: 2.5rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #333;
-      line-height: 1.5;
-      margin: 10px 20px;
-    }
-
-    .quote {
-      font-size: 2em;
-      color: darkorange;
-      margin: 30px 0 10px;
-      font-weight: bold;
-    }
-
-    iframe {
-      margin-top: 20px;
-      border: 4px solid darkcyan;
-      border-radius: 12px;
-      max-width: 100%;
-    }
-
-    img {
-      margin-top: 30px;
-      max-width: 90%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        padding: 10px;
-      }
-
-      .nav-form {
-        flex-direction: column;
-        gap: 5px;
-      }
-
-      nav a {
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC - Alex Pereira</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background-color: darkcyan;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: darkcyan;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.5;
+            margin: 10px 20px;
+        }
+        h2 {
+            color: darkcyan;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        a.link-btn {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            color: darkcyan;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        a.link-btn:hover {
+            text-decoration: underline;
+        }
+        img {
+            margin-top: 30px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <a href="https://www.ufc.com/rankings" target="_blank">P4P List</a>
-    <a href="https://www.ufc.com/events" target="_blank">Upcoming Events</a>
-    <a href="https://www.ufc.com/news" target="_blank">News</a>
-    <a href="#">Contact</a>
-  </nav>
+    <nav>
+        <a href="https://www.ufc.com/rankings" target="_blank">P4P List</a>
+        <a href="https://www.ufc.com/events" target="_blank">Upcoming Events</a>
+        <a href="https://www.ufc.com/news" target="_blank">News</a>
+        <a href="#">Contact</a>
+    </nav>
 
-  <form class="nav-form" action="#" method="post">
-    <input type="text" name="fighter" placeholder="Favorite Fighter" required />
-    <input type="text" name="event" placeholder="Favorite UFC Event" required />
-    <button type="submit">Submit</button>
-  </form>
+    <h1>Welcome to the UFC - Alex Periera Fan Page!</h1>
 
-  <h1>Welcome to the UFC - Alex Periera Fan Page!</h1>
+    <p>Alex Pereira, a Brazilian mixed martial artist, rose to prominence through his incredible knockout power and exceptional kickboxing skills. Known for his rivalry with Israel Adesanya, Pereira faced the middleweight champion multiple times, with their epic battles culminating in Pereira dethroning Adesanya at UFC 281. Beyond the cage, Pereira's story is deeply tied to his tribal roots. Coming from a proud indigenous background, he embraces his heritage and tribal bloodline, which has shaped his resilience and fighting spirit. His journey is not only a testament to his athletic prowess but also to his deep connection to his cultural identity.</p>
 
-  <p>Welcome to the Alex Periera UFC Homepage. Above is a menu to give you access to any UFC information you need! The rest of this page will give plenty of information about Alex and his story!</p>
+    <h2>Quote from Alex Pereira:</h2>
+    <p id="quote">Loading quote...</p>
 
-  <p>Alex Pereira, a Brazilian mixed martial artist, rose to prominence through his incredible knockout power and exceptional kickboxing skills. Known for his rivalry with Israel Adesanya, Pereira faced the middleweight champion multiple times, with their epic battles culminating in Pereira dethroning Adesanya at UFC 281. Beyond the cage, Pereira's story is deeply tied to his tribal roots. Coming from a proud indigenous background, he embraces his heritage and tribal bloodline, which has shaped his resilience and fighting spirit. His journey is not only a testament to his athletic prowess but also to his deep connection to his cultural identity.</p>
+    <h2>Watch Alex Pereira's Career Highlights:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <div class="quote">🔥 “CHAMA” 🔥</div>
+    <h2>Here is a link to the current UFC rankings including the P4P list! My favourite fighter is Alex Pereira, can you find him?</h2>
+    <a class="link-btn" href="https://www.ufc.com/rankings" target="_blank">UFC Rankings</a>
 
-  <h2>Alex Pereira Career Highlight Reel</h2>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/rF6P4nb48oQ?rel=0&modestbranding=1"
-    title="Alex Pereira Highlight"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-  ></iframe>
+    <br>
 
-  <img src="alex-periera.jpg" alt="Alex Pereira" />
+    <img src="alex-periera.jpg" alt="Alex Pereira">
+
+    <script>
+        // Fetch Quote API
+        fetch('https://api.quotable.io/random?tags=chama')
+            .then(response => response.json())
+            .then(data => {
+                // Display the quote in the paragraph with id "quote"
+                const quoteElement = document.getElementById('quote');
+                quoteElement.textContent = `"${data.content}" - ${data.author}`;
+            })
+            .catch(error => console.error('Error fetching quote:', error));
+    </script>
 
 </body>
 </html>
-
